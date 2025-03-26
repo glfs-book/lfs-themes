@@ -1,0 +1,45 @@
+# lfs-themes
+
+A collection of Linux From Scratch themes (CSS files) to be used with the
+`*LFS*` books.
+
+This repository is namely meant for the LFS books made by the GLFS development
+team and its contributors, but can be used for the books made by the LFS and
+BLFS development teams (LFS, MLFS, and BLFS).
+
+## In use with GLFS/LFS-QOL
+
+For Gaming LFS, when rendering the book, run the following:
+```Bash
+make <options> \
+GLFS_THEME_PATH=/path/to/lfs-themes/themes \
+GLFS_THEME=<theme>
+```
+
+For LFS-QOL, run this instead:
+```Bash
+make <options> \
+LFS_QOL_THEME_PATH=/path/to/lfs-themes/themes \
+LFS_QOL_THEME=<theme>
+```
+
+`<options>` corrospond to specific options used by the `Makefile` of each book,
+while `<theme>` should be `themes/<theme>.lfs.css`. For example, if you want to
+use the dark theme (`themes/dark.lfs.css`), set `*THEME` to `dark`.
+
+## Manual use
+
+This is used for already rendered LFS books, and is the only way to get themes
+working with books made by the LFS and BLFS development teams. This skips the
+need to render anything, but requires to be redone everytime a new book version
+is on the system.
+
+This also requires the book to be on the system, though may be possible to
+replace the CSS being used when viewed online.
+
+Generally, this is how it should be done:
+```Bash
+cp -v /path/to/lfs-themes/themes/<theme>.lfs.css /path/to/book/stylesheets/lfs.css
+```
+
+Replace `<theme>` with the theme you wish to use.
