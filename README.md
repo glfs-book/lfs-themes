@@ -43,3 +43,10 @@ cp -v /path/to/lfs-themes/themes/<theme>.lfs.css /path/to/book/stylesheets/lfs.c
 ```
 
 Replace `<theme>` with the theme you wish to use.
+
+## Contributing
+Fork this repository and check out to a new branch. Copy an existing theme[^1]
+and edit it to your heart's content. Once you've completed your masterpiece,
+push to your fork, then submit a pull request.
+
+[^1]: A template theme will be added in the future.
