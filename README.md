@@ -25,7 +25,8 @@ LFS_QOL_THEME=<theme>
 
 `<options>` corrospond to specific options used by the `Makefile` of each book,
 while `<theme>` should be `themes/<theme>.lfs.css`. For example, if you want to
-use the dark theme (`themes/dark.lfs.css`), set `*THEME` to `dark`.
+use the GLFS dark theme (`themes/glfs-dark.lfs.css`), set `*THEME` to
+`glfs-dark`.
 
 ## Manual use
 
