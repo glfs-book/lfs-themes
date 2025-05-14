@@ -2,7 +2,7 @@
 body {
   font-family: verdana, tahoma, helvetica, arial, sans-serif;
   text-align: left;
-  background: #fff;
+  background: #f3f0f5;
   color: #222;
   margin: 1em;
   padding: 0;
@@ -12,16 +12,16 @@ body {
 
 
 /* Links */
-a:link { color: #22b; }
-a.ulink:link { font-weight: bold; color: #55f; }
-a:visited { color: #7e4988 ! important; }
-a:hover, a:focus { color: #d30e08 ! important; }
+a:link { color: #c08ce2; }
+a.ulink:link { font-weight: bold; color: #c08ce2; }
+a:visited { color: #9d8baa ! important; }
+a:hover, a:focus { color: #f187f1 ! important; }
 a:active { color: #6b77b1 ! important;}
 
 
 /* Book titlepage */
 .book .titlepage {
-  background: #f5f6f7;
+  background: #e5dae6;
   margin: 0px auto;
   padding: 0 1em;
 }
@@ -34,7 +34,7 @@ a:active { color: #6b77b1 ! important;}
 }
 
 .book hr {
-  background: #dbddec;
+  background: #f8eefd;
   height: .3em;
   border: 0px;
   margin: 0 -1em;
@@ -47,8 +47,8 @@ div.dedication {
 
 /* Section titles */
 h1.sect1, h1.preface, h1.part, h1.chapter, h1.appendix, .glossary h1, .index h1 {
-  background: #f5f6f7;
-  border-bottom: .1em solid #dbddec;
+  background: #e5dae6;
+  border-bottom: .1em solid #f8eefd;
   margin-bottom:1em;
   margin-top: 0;
   padding: .4em;
@@ -73,7 +73,7 @@ div.sect1, div.appendix, div.preface, div.part, div.chapter, div.glossdiv, .inde
   left:1em;
   right:1em;
   bottom: 1em;
-  border-bottom: 1em solid #dbddec;
+  border-bottom: 1em solid #f8eefd;
 }
 
 .package, .kernel, .installation, .commands, .testing, .configuration, .content {
@@ -133,7 +133,7 @@ h2 {
 
 .book h2.subtitle {
   text-align: center;
-  background: #dbddec;
+  background: #f8eefd;
   margin: 0;
   padding: 0.2em;
 }
@@ -160,13 +160,13 @@ h4 {
 
 /* Navigation */
 div.navheader, div.navfooter {
-  background: #ecedef;
+  background: #e5dae6;
   margin: 0;
   padding: 0.1em .5em;
 }
 
 div.navheader {
-  border-bottom: .1em solid #dbddec;
+  border-bottom: .1em solid #f8eefd;
 }
 
 /* no need for a footer now that the header is always visible */
@@ -197,7 +197,7 @@ div.navheader ul, div.navfooter ul {
   padding: .2em .5em .5em .5em; /*top right bottom left*/
   margin: .5em 0;
   position: relative;
-  background: #dbddec;
+  background: #f8eefd;
 }
 
 div.navheader ul li, div.navfooter ul li {
@@ -235,7 +235,7 @@ div.navfooter ul li.home, div.navfooter ul li.up {
   padding: 0;
   margin: 0 auto;
   display: block;
-  color: #dbddec;
+  color: #f8eefd;
 }
 
 
