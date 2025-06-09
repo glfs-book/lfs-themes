@@ -7,7 +7,7 @@ This repository is namely meant for the LFS books made by the GLFS development
 team and its contributors, but can be used for the books made by the LFS and
 BLFS development teams (LFS, MLFS, and BLFS).
 
-## In use with GLFS/LFS-QOL
+## In use with GLFS/SLFS
 
 For Gaming LFS, when rendering the book, run the following:
 ```Bash
@@ -16,11 +16,11 @@ GLFS_THEME_PATH=/path/to/lfs-themes/themes \
 GLFS_THEME=<theme>
 ```
 
-For LFS-QOL, run this instead:
+For SLFS, run this instead:
 ```Bash
 make <options> \
-LFS_QOL_THEME_PATH=/path/to/lfs-themes/themes \
-LFS_QOL_THEME=<theme>
+SLFS_THEME_PATH=/path/to/lfs-themes/themes \
+SLFS_THEME=<theme>
 ```
 
 `<options>` corrospond to specific options used by the `Makefile` of each book,
