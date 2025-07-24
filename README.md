@@ -9,18 +9,12 @@ BLFS development teams (LFS, MLFS, and BLFS).
 
 ## In use with GLFS/SLFS
 
-For Gaming LFS, when rendering the book, run the following:
+For Gaming or Supplemental LFS, when rendering the books, you can run the
+following:
 ```Bash
 make <options> \
-GLFS_THEME_PATH=/path/to/lfs-themes/themes \
-GLFS_THEME=<theme>
-```
-
-For SLFS, run this instead:
-```Bash
-make <options> \
-SLFS_THEME_PATH=/path/to/lfs-themes/themes \
-SLFS_THEME=<theme>
+THEME_PATH=/path/to/lfs-themes/themes \
+THEME=<theme>
 ```
 
 `<options>` corrospond to specific options used by the `Makefile` of each book,
