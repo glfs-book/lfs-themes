@@ -21,14 +21,14 @@ For example, assuming you have SLFS and lfs-themes in `/sources`, you could
 build SLFS using the 'whitepink' theme like so:
 ```Bash
 cd /sources/slfs
-make REV=sysv THEME_PATH=../lfs-themes/themes THEME=whitepink
+make THEME_PATH=../lfs-themes/themes THEME=whitepink
 ```
 
-## In use with LFS/MLFS/BLFS
+## In use with other \*LFS books
 
-The LFS, MLFS, and BLFS Makefiles do not support the `THEME` or `THEME_PATH`
-variables, so the default theme must be overwritten. The theme may be
-overwritten at build or install time.
+The Makefiles for the books maintained by the LFS and BLFS development teams do
+not support the `THEME` or `THEME_PATH` variables, so the default theme must be
+overwritten. This may be done at build or install time.
 
 ### Build Time Overwriting
 To overwrite the default theme at build time:
