@@ -1,11 +1,11 @@
 # lfs-themes
 
-A collection of Linux From Scratch themes (CSS files) to be used with the
-`*LFS*` books.
+A collection of Linux From Scratch themes (CSS files) to be used with the `*LFS`
+books.
 
-This repository is namely meant for the LFS books made by the GLFS development
-team and its contributors, but can be used for the books made by the LFS and
-BLFS development teams (LFS, MLFS, and BLFS).
+This repository is intended for the SLFS and GLFS books made by the GLFS
+development team and its contributors, but can also be used for LFS, MLFS, and
+BLFS.
 
 ## In use with GLFS/SLFS
 
@@ -17,31 +17,36 @@ THEME_PATH=/path/to/lfs-themes/themes \
 THEME=<theme>
 ```
 
-`<options>` corrospond to specific options used by the `Makefile` of each book,
-while `<theme>` should be `themes/<theme>.lfs.css`. For example, if you want to
-use the GLFS dark theme (`themes/glfs-dark.lfs.css`), set `*THEME` to
-`glfs-dark`.
-
-## Manual use
-
-This is used for already rendered LFS books, and is the only way to get themes
-working with books made by the LFS and BLFS development teams. This skips the
-need to render anything, but requires to be redone everytime a new book version
-is on the system.
-
-This also requires the book to be on the system, though may be possible to
-replace the CSS being used when viewed online.
-
-Generally, this is how it should be done:
+For example, assuming you have SLFS and lfs-themes in `/sources`, you could
+build SLFS using the 'whitepink' theme like so:
 ```Bash
-cp -v /path/to/lfs-themes/themes/<theme>.lfs.css /path/to/book/stylesheets/lfs.css
+cd /sources/slfs
+make THEME_PATH=../lfs-themes/themes THEME=whitepink
+```
+
+## In use with other \*LFS books
+
+The Makefiles for the books maintained by the LFS and BLFS development teams do
+not support the `THEME` or `THEME_PATH` variables, so the default theme must be
+overwritten. This may be done at build or install time.
+
+### Build Time Overwriting
+To overwrite the default theme at build time:
+```Bash
+cp -vf /path/to/lfs-themes/themes/<theme>.lfs.css /path/to/book/sources/stylesheets/lfs-xsl/lfs.css
+```
+
+Replace `<theme>` with the theme you wish to use. Then just build the book as usual.
+
+### Install Time Overwriting
+Alternatively, to overwrite the default theme at install time:
+```Bash
+cp -vf /path/to/lfs-themes/themes/<theme>.lfs.css /path/to/rendered/book/stylesheets/lfs.css
 ```
 
 Replace `<theme>` with the theme you wish to use.
 
 ## Contributing
-Fork this repository and check out to a new branch. Copy an existing theme[^1]
+Fork this repository and `git checkout` to a new branch. Copy an existing theme
 and edit it to your heart's content. Once you've completed your masterpiece,
 push to your fork, then submit a pull request.
-
-[^1]: A template theme will be added in the future.
